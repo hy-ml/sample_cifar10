@@ -87,9 +87,6 @@ def train():
         ['epoch', 'main/loss', 'validation/main/loss',
          'main/accuracy', 'validation/main/accuracy', 'elapsed_time']))
 
-    # Print a progress bar to stdout
-    trainer.extend(extensions.ProgressBar())
-
     # Run the training
     trainer.run()
 
